@@ -21,7 +21,7 @@ for tag in perform:
 		m=l.find(class_='item-info').find(class_='item-inner')
 		news=m.find(class_='item-content').find(class_='item-des')
 		latestupdate=news.find('strong')
-		print(latestupdate.text,latestupdate.next_sibling)
+		print(latestupdate.text)
 		link=latestupdate.find('a')
 		print(link.get('href'))
 		print('\n------------------------------------------')
